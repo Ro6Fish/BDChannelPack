@@ -10,8 +10,10 @@ import Cocoa
 
 class MainViewController: NSViewController {
     
+    // 加固后的apk路径
     @IBOutlet weak var tfApkPath: NSTextField!
     
+    // 渠道输出目录
     @IBOutlet weak var tfOutputDir: NSTextField!
     
     @IBOutlet weak var tfSignPath: NSTextField!
@@ -32,16 +34,15 @@ class MainViewController: NSViewController {
     
     @IBAction func doChoiceChannel(sender: AnyObject) {
         
-        print("点击了")
     }
     
+    // 渠道列表
     var channelList = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        
+        // 设置签名密码和别名密码监听，没有处理签名文件输入框的监听
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(doGetAlias), name: NSControlTextDidChangeNotification, object: nil)
     }
     
@@ -53,6 +54,7 @@ class MainViewController: NSViewController {
         }
     }
     
+    // 查看签名信息
     func doGetKeySotreInfoCmd() {
         
         let task = NSTask()
@@ -84,20 +86,11 @@ class MainViewController: NSViewController {
     
     override var representedObject: AnyObject? {
         didSet {
-            // Update the view, if already loaded.
+            
         }
     }
     
-    //使用这个方法
-    //    -(void)controlTextDidChange:(NSNotification *)obj
-    //    {
-    //    //1、unregister previous method
-    //    [NSObject cancelPreviousPerformRequestsWithTarget:self];
-    //
-    //    //2、
-    //    [self performSelector:@selector(Did:) withObject:nil afterDelay:1];
-    //    }
-    
+    // 选择加固的apk存放的位置
     @IBAction func doChoiceApk(sender: AnyObject) {
         
         let myFileDialog: NSOpenPanel = NSOpenPanel()
@@ -111,9 +104,8 @@ class MainViewController: NSViewController {
         }
     }
     
+    // 选择签名后文件存放的位置
     @IBAction func doOutputDir(sender: AnyObject) {
-        
-        print("选择签名后文件存放的位置")
         
         let myFileDialog: NSOpenPanel = NSOpenPanel()
         
@@ -129,9 +121,8 @@ class MainViewController: NSViewController {
         }
     }
     
+    // 选择签名文件
     @IBAction func doChoiceSign(sender: AnyObject) {
-        
-        print("选择签名")
         
         let myFileDialog: NSOpenPanel = NSOpenPanel()
         
@@ -144,9 +135,13 @@ class MainViewController: NSViewController {
         }
     }
     
+    // 开始签名
     @IBAction func doSign(sender: AnyObject) {
         
+        // 获取apk处理工具jar路径
         let apkHandlePath = NSBundle.mainBundle().pathForResource("ApkHandle", ofType: "jar")
+        
+        // 获取更改渠道jar路径
         let apkChannel = NSBundle.mainBundle().pathForResource("ApkChannel", ofType: "jar")
         
         print("apkHandlePath:" + apkHandlePath!)
@@ -168,13 +163,10 @@ class MainViewController: NSViewController {
             let tempApkName = tempPathList[tempPathList.count - 1] // 获取apk名称
             let replaceApkPath = tfApkPath.stringValue.stringByReplacingOccurrencesOfString(tempApkName, withString: "")
             
-            print("tempPath:" + replaceApkPath)
-            
             let date = NSDate()
             let interval = date.timeIntervalSince1970
             let intervalStr = String(format: "%.f", interval);
             let timeName = intervalStr.substringToIndex(intervalStr.startIndex.advancedBy(7));
-            print("tempPath:" + timeName)
             
             let tempPath = replaceApkPath + "temp" + timeName + "/"
             
@@ -218,6 +210,7 @@ class MainViewController: NSViewController {
         alertView.runModal()
     }
     
+    // 执行jar命令
     func doCmdJar(arguments:[String]) {
         
         let task = NSTask()
@@ -235,6 +228,7 @@ class MainViewController: NSViewController {
         print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:")
     }
     
+    // 选择渠道后回调
     override func prepareForSegue(segue: NSStoryboardSegue, sender: AnyObject?) {
         
         guard let segueIdentifier = segue.identifier else {
