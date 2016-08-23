@@ -41,6 +41,9 @@
 		0C7644461D647045004E739B /* Channel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Channel.storyboard; path = ../Channel.storyboard; sourceTree = "<group>"; };
 		0C76444D1D6A95A1004E739B /* ApkChannel.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = ApkChannel.jar; sourceTree = "<group>"; };
 		0C76445B1D6C09AE004E739B /* ApkHandle.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = ApkHandle.jar; sourceTree = "<group>"; };
+		0C7644611D6C5557004E739B /* icon_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_main.png; sourceTree = "<group>"; };
+		0C7644621D6C5557004E739B /* icon_channel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_channel.png; sourceTree = "<group>"; };
+		0C7644651D6C55B8004E739B /* 百度多渠道打包工具.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "百度多渠道打包工具.zip"; sourceTree = "<group>"; };
 		0CA7F17E1D6404DF004DEFC4 /* baiduchannelpack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baiduchannelpack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA7F1811D6404DF004DEFC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CA7F1831D6404DF004DEFC4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +108,16 @@
 			name = lib;
 			sourceTree = "<group>";
 		};
+		0C76445E1D6C541A004E739B /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				0C7644651D6C55B8004E739B /* 百度多渠道打包工具.zip */,
+				0C7644611D6C5557004E739B /* icon_main.png */,
+				0C7644621D6C5557004E739B /* icon_channel.png */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
 		0CA7F1751D6404DF004DEFC4 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +141,7 @@
 		0CA7F1801D6404DF004DEFC4 /* baiduchannelpack */ = {
 			isa = PBXGroup;
 			children = (
+				0C76445E1D6C541A004E739B /* assets */,
 				0C76444C1D6A958F004E739B /* lib */,
 				0C7644451D646B14004E739B /* main */,
 				0C76443E1D643F34004E739B /* channel */,
