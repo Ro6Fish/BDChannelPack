@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C7644441D64621E004E739B /* ChannelPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7644431D64621E004E739B /* ChannelPickViewController.swift */; };
+		0C7644471D647045004E739B /* Channel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C7644461D647045004E739B /* Channel.storyboard */; };
+		0C76444F1D6A9933004E739B /* ApkChannel.jar in Resources */ = {isa = PBXBuildFile; fileRef = 0C76444D1D6A95A1004E739B /* ApkChannel.jar */; };
+		0C76445D1D6C09D0004E739B /* ApkHandle.jar in Resources */ = {isa = PBXBuildFile; fileRef = 0C76445B1D6C09AE004E739B /* ApkHandle.jar */; };
+		0CA7F1821D6404DF004DEFC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA7F1811D6404DF004DEFC4 /* AppDelegate.swift */; };
+		0CA7F1841D6404DF004DEFC4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA7F1831D6404DF004DEFC4 /* MainViewController.swift */; };
+		0CA7F1861D6404DF004DEFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CA7F1851D6404DF004DEFC4 /* Assets.xcassets */; };
+		0CA7F1891D6404DF004DEFC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CA7F1871D6404DF004DEFC4 /* Main.storyboard */; };
+		0CA7F1941D6404E0004DEFC4 /* baiduchannelpackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA7F1931D6404E0004DEFC4 /* baiduchannelpackTests.swift */; };
+		0CA7F19F1D6404E0004DEFC4 /* baiduchannelpackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA7F19E1D6404E0004DEFC4 /* baiduchannelpackUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CA7F1901D6404E0004DEFC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CA7F1761D6404DF004DEFC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CA7F17D1D6404DF004DEFC4;
+			remoteInfo = baiduchannelpack;
+		};
+		0CA7F19B1D6404E0004DEFC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CA7F1761D6404DF004DEFC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CA7F17D1D6404DF004DEFC4;
+			remoteInfo = baiduchannelpack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C7644431D64621E004E739B /* ChannelPickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelPickViewController.swift; sourceTree = "<group>"; };
+		0C7644461D647045004E739B /* Channel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Channel.storyboard; path = ../Channel.storyboard; sourceTree = "<group>"; };
+		0C76444D1D6A95A1004E739B /* ApkChannel.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = ApkChannel.jar; sourceTree = "<group>"; };
+		0C76445B1D6C09AE004E739B /* ApkHandle.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = ApkHandle.jar; sourceTree = "<group>"; };
+		0CA7F17E1D6404DF004DEFC4 /* baiduchannelpack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baiduchannelpack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CA7F1811D6404DF004DEFC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CA7F1831D6404DF004DEFC4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0CA7F1851D6404DF004DEFC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CA7F1881D6404DF004DEFC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CA7F18A1D6404DF004DEFC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CA7F18F1D6404E0004DEFC4 /* baiduchannelpackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baiduchannelpackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CA7F1931D6404E0004DEFC4 /* baiduchannelpackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baiduchannelpackTests.swift; sourceTree = "<group>"; };
+		0CA7F1951D6404E0004DEFC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CA7F19A1D6404E0004DEFC4 /* baiduchannelpackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baiduchannelpackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CA7F19E1D6404E0004DEFC4 /* baiduchannelpackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baiduchannelpackUITests.swift; sourceTree = "<group>"; };
+		0CA7F1A01D6404E0004DEFC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CA7F17B1D6404DF004DEFC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CA7F18C1D6404E0004DEFC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CA7F1971D6404E0004DEFC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C76443E1D643F34004E739B /* channel */ = {
+			isa = PBXGroup;
+			children = (
+				0C7644431D64621E004E739B /* ChannelPickViewController.swift */,
+			);
+			name = channel;
+			sourceTree = "<group>";
+		};
+		0C7644451D646B14004E739B /* main */ = {
+			isa = PBXGroup;
+			children = (
+				0CA7F1831D6404DF004DEFC4 /* MainViewController.swift */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		0C76444C1D6A958F004E739B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0C76445B1D6C09AE004E739B /* ApkHandle.jar */,
+				0C76444D1D6A95A1004E739B /* ApkChannel.jar */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		0CA7F1751D6404DF004DEFC4 = {
+			isa = PBXGroup;
+			children = (
+				0CA7F1801D6404DF004DEFC4 /* baiduchannelpack */,
+				0CA7F1921D6404E0004DEFC4 /* baiduchannelpackTests */,
+				0CA7F19D1D6404E0004DEFC4 /* baiduchannelpackUITests */,
+				0CA7F17F1D6404DF004DEFC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CA7F17F1D6404DF004DEFC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CA7F17E1D6404DF004DEFC4 /* baiduchannelpack.app */,
+				0CA7F18F1D6404E0004DEFC4 /* baiduchannelpackTests.xctest */,
+				0CA7F19A1D6404E0004DEFC4 /* baiduchannelpackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CA7F1801D6404DF004DEFC4 /* baiduchannelpack */ = {
+			isa = PBXGroup;
+			children = (
+				0C76444C1D6A958F004E739B /* lib */,
+				0C7644451D646B14004E739B /* main */,
+				0C76443E1D643F34004E739B /* channel */,
+				0CA7F1811D6404DF004DEFC4 /* AppDelegate.swift */,
+				0CA7F1851D6404DF004DEFC4 /* Assets.xcassets */,
+				0C7644461D647045004E739B /* Channel.storyboard */,
+				0CA7F1871D6404DF004DEFC4 /* Main.storyboard */,
+				0CA7F18A1D6404DF004DEFC4 /* Info.plist */,
+			);
+			path = baiduchannelpack;
+			sourceTree = "<group>";
+		};
+		0CA7F1921D6404E0004DEFC4 /* baiduchannelpackTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CA7F1931D6404E0004DEFC4 /* baiduchannelpackTests.swift */,
+				0CA7F1951D6404E0004DEFC4 /* Info.plist */,
+			);
+			path = baiduchannelpackTests;
+			sourceTree = "<group>";
+		};
+		0CA7F19D1D6404E0004DEFC4 /* baiduchannelpackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0CA7F19E1D6404E0004DEFC4 /* baiduchannelpackUITests.swift */,
+				0CA7F1A01D6404E0004DEFC4 /* Info.plist */,
+			);
+			path = baiduchannelpackUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CA7F17D1D6404DF004DEFC4 /* baiduchannelpack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CA7F1A31D6404E0004DEFC4 /* Build configuration list for PBXNativeTarget "baiduchannelpack" */;
+			buildPhases = (
+				0CA7F17A1D6404DF004DEFC4 /* Sources */,
+				0CA7F17B1D6404DF004DEFC4 /* Frameworks */,
+				0CA7F17C1D6404DF004DEFC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = baiduchannelpack;
+			productName = baiduchannelpack;
+			productReference = 0CA7F17E1D6404DF004DEFC4 /* baiduchannelpack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CA7F18E1D6404E0004DEFC4 /* baiduchannelpackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CA7F1A61D6404E0004DEFC4 /* Build configuration list for PBXNativeTarget "baiduchannelpackTests" */;
+			buildPhases = (
+				0CA7F18B1D6404E0004DEFC4 /* Sources */,
+				0CA7F18C1D6404E0004DEFC4 /* Frameworks */,
+				0CA7F18D1D6404E0004DEFC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CA7F1911D6404E0004DEFC4 /* PBXTargetDependency */,
+			);
+			name = baiduchannelpackTests;
+			productName = baiduchannelpackTests;
+			productReference = 0CA7F18F1D6404E0004DEFC4 /* baiduchannelpackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0CA7F1991D6404E0004DEFC4 /* baiduchannelpackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CA7F1A91D6404E0004DEFC4 /* Build configuration list for PBXNativeTarget "baiduchannelpackUITests" */;
+			buildPhases = (
+				0CA7F1961D6404E0004DEFC4 /* Sources */,
+				0CA7F1971D6404E0004DEFC4 /* Frameworks */,
+				0CA7F1981D6404E0004DEFC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CA7F19C1D6404E0004DEFC4 /* PBXTargetDependency */,
+			);
+			name = baiduchannelpackUITests;
+			productName = baiduchannelpackUITests;
+			productReference = 0CA7F19A1D6404E0004DEFC4 /* baiduchannelpackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CA7F1761D6404DF004DEFC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = luokaiwen;
+				TargetAttributes = {
+					0CA7F17D1D6404DF004DEFC4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					0CA7F18E1D6404E0004DEFC4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0CA7F17D1D6404DF004DEFC4;
+					};
+					0CA7F1991D6404E0004DEFC4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0CA7F17D1D6404DF004DEFC4;
+					};
+				};
+			};
+			buildConfigurationList = 0CA7F1791D6404DF004DEFC4 /* Build configuration list for PBXProject "baiduchannelpack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CA7F1751D6404DF004DEFC4;
+			productRefGroup = 0CA7F17F1D6404DF004DEFC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CA7F17D1D6404DF004DEFC4 /* baiduchannelpack */,
+				0CA7F18E1D6404E0004DEFC4 /* baiduchannelpackTests */,
+				0CA7F1991D6404E0004DEFC4 /* baiduchannelpackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CA7F17C1D6404DF004DEFC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C76445D1D6C09D0004E739B /* ApkHandle.jar in Resources */,
+				0C76444F1D6A9933004E739B /* ApkChannel.jar in Resources */,
+				0C7644471D647045004E739B /* Channel.storyboard in Resources */,
+				0CA7F1861D6404DF004DEFC4 /* Assets.xcassets in Resources */,
+				0CA7F1891D6404DF004DEFC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CA7F18D1D6404E0004DEFC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CA7F1981D6404E0004DEFC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CA7F17A1D6404DF004DEFC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C7644441D64621E004E739B /* ChannelPickViewController.swift in Sources */,
+				0CA7F1841D6404DF004DEFC4 /* MainViewController.swift in Sources */,
+				0CA7F1821D6404DF004DEFC4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CA7F18B1D6404E0004DEFC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA7F1941D6404E0004DEFC4 /* baiduchannelpackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CA7F1961D6404E0004DEFC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA7F19F1D6404E0004DEFC4 /* baiduchannelpackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CA7F1911D6404E0004DEFC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CA7F17D1D6404DF004DEFC4 /* baiduchannelpack */;
+			targetProxy = 0CA7F1901D6404E0004DEFC4 /* PBXContainerItemProxy */;
+		};
+		0CA7F19C1D6404E0004DEFC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CA7F17D1D6404DF004DEFC4 /* baiduchannelpack */;
+			targetProxy = 0CA7F19B1D6404E0004DEFC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0CA7F1871D6404DF004DEFC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CA7F1881D6404DF004DEFC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CA7F1A11D6404E0004DEFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CA7F1A21D6404E0004DEFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0CA7F1A41D6404E0004DEFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = baiduchannelpack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rokevin.baiduchannelpack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0CA7F1A51D6404E0004DEFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = baiduchannelpack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rokevin.baiduchannelpack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0CA7F1A71D6404E0004DEFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = baiduchannelpackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rokevin.baiduchannelpackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/baiduchannelpack.app/Contents/MacOS/baiduchannelpack";
+			};
+			name = Debug;
+		};
+		0CA7F1A81D6404E0004DEFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = baiduchannelpackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rokevin.baiduchannelpackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/baiduchannelpack.app/Contents/MacOS/baiduchannelpack";
+			};
+			name = Release;
+		};
+		0CA7F1AA1D6404E0004DEFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = baiduchannelpackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rokevin.baiduchannelpackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = baiduchannelpack;
+			};
+			name = Debug;
+		};
+		0CA7F1AB1D6404E0004DEFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = baiduchannelpackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rokevin.baiduchannelpackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = baiduchannelpack;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CA7F1791D6404DF004DEFC4 /* Build configuration list for PBXProject "baiduchannelpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CA7F1A11D6404E0004DEFC4 /* Debug */,
+				0CA7F1A21D6404E0004DEFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CA7F1A31D6404E0004DEFC4 /* Build configuration list for PBXNativeTarget "baiduchannelpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CA7F1A41D6404E0004DEFC4 /* Debug */,
+				0CA7F1A51D6404E0004DEFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CA7F1A61D6404E0004DEFC4 /* Build configuration list for PBXNativeTarget "baiduchannelpackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CA7F1A71D6404E0004DEFC4 /* Debug */,
+				0CA7F1A81D6404E0004DEFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CA7F1A91D6404E0004DEFC4 /* Build configuration list for PBXNativeTarget "baiduchannelpackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CA7F1AA1D6404E0004DEFC4 /* Debug */,
+				0CA7F1AB1D6404E0004DEFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CA7F1761D6404DF004DEFC4 /* Project object */;
+}
